@@ -1,0 +1,22 @@
+plugins {
+    id 'unimined-neoforge'
+}
+
+repositories {
+    mavenCentral()
+    // Waystones + Balm are pulled from Modrinth purely as dev-time API jars (compile + dev runtime).
+    maven {
+        name = "Modrinth"
+        url = "https://api.modrinth.com/maven"
+        content { includeGroup "maven.modrinth" }
+    }
+}
+
+dependencies {
+    // Gives the Mixin annotation processor the real WaystoneBlock class so it can resolve
+    // `animateTick` and emit a correct refmap. These are NOT bundled into our jar - the player's
+    // installed Waystones/Balm provide them at runtime. Balm is required because WaystoneBlock's
+    // class hierarchy references it.
+    modImplementation "maven.modrinth:waystones:${waystones_version}+neoforge-1.21.1"
+    modImplementation "maven.modrinth:balm:${balm_version}+neoforge-1.21.1"
+}

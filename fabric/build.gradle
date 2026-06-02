@@ -1,0 +1,25 @@
+plugins {
+    id 'unimined-fabric'
+}
+
+repositories {
+    mavenCentral()
+    maven { url "https://maven.fabricmc.net/" }
+    // Waystones + Balm are pulled from Modrinth purely as dev-time API jars (compile + dev runtime).
+    maven {
+        name = "Modrinth"
+        url = "https://api.modrinth.com/maven"
+        content { includeGroup "maven.modrinth" }
+    }
+}
+
+dependencies {
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${gradle.ext.fabric_api_version}"
+
+    // Gives the Mixin annotation processor the real WaystoneBlock class so it can resolve
+    // `animateTick` and emit a correct refmap. These are NOT bundled into our jar (Fabric does
+    // not JiJ modImplementation deps) - the player's installed Waystones/Balm provide them at
+    // runtime. Balm is required because WaystoneBlock's class hierarchy references it.
+    modImplementation "maven.modrinth:waystones:${waystones_version}+fabric-1.21.1"
+    modImplementation "maven.modrinth:balm:${balm_version}+fabric-1.21.1"
+}

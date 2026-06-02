@@ -1,0 +1,13 @@
+{
+  "__comment": "Waystones Model Replacer override: +180 degrees on Y vs vanilla Waystones so the signpost faces the intended way.",
+  "variants": {
+    "facing=east,half=lower":  { "model": "waystones:block/end_stone_waystone_bottom", "y": 270 },
+    "facing=east,half=upper":  { "model": "waystones:block/end_stone_waystone_top",    "y": 270 },
+    "facing=north,half=lower": { "model": "waystones:block/end_stone_waystone_bottom", "y": 180 },
+    "facing=north,half=upper": { "model": "waystones:block/end_stone_waystone_top",    "y": 180 },
+    "facing=south,half=lower": { "model": "waystones:block/end_stone_waystone_bottom" },
+    "facing=south,half=upper": { "model": "waystones:block/end_stone_waystone_top" },
+    "facing=west,half=lower":  { "model": "waystones:block/end_stone_waystone_bottom", "y": 90 },
+    "facing=west,half=upper":  { "model": "waystones:block/end_stone_waystone_top",    "y": 90 }
+  }
+}

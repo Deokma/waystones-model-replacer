@@ -1,0 +1,13 @@
+plugins {
+    id 'minecraft'
+}
+
+unimined.minecraft {
+    neoForged {
+        loader gradle.ext.neoforge_loader
+        useToolchains = false
+    }
+}
+
+runClient.javaLauncher = null
+runServer.javaLauncher = null

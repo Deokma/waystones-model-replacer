@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8.5",
+  "package": "dev.deokma.wmr.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "WaystoneBlockShapeMixin"
+  ],
+  "client": [
+    "WaystoneBlockParticlesMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

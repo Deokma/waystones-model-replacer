@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "waystones_model_replacer",
+  "version": "${version}",
+  "name": "Waystones Model Replacer",
+  "description": "Visually replaces the Waystones model, textures, runes and particles with a custom model. Cosmetic-only, no gameplay changes.",
+  "authors": ["deokma"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "main": ["dev.deokma.wmr.fabric.WaystonesModelReplacerFabric"],
+    "client": ["dev.deokma.wmr.fabric.WaystonesModelReplacerFabricClient"]
+  },
+  "mixins": [
+    "waystones_model_replacer.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.1",
+    "waystones": ">=21.1.0 <21.2.0"
+  },
+  "suggests": {
+    "fabric-api": "*"
+  }
+}

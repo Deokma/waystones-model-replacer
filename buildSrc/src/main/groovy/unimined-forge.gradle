@@ -1,0 +1,13 @@
+plugins {
+    id 'minecraft'
+}
+
+unimined.minecraft {
+    forge {
+        loader gradle.ext.forge_loader
+        useToolchains = false
+        mixinConfig("${mod_id}.mixins.json")
+    }
+}
+runClient.javaLauncher = null
+runServer.javaLauncher = null

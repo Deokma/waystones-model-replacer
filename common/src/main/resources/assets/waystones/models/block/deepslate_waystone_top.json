@@ -1,0 +1,4 @@
+{
+  "__comment": "Waystones Model Replacer variant redirect -> shared custom geometry.",
+  "parent": "waystones:block/waystone_top"
+}

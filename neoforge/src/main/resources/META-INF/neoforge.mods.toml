@@ -1,0 +1,40 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+
+[[mods]]
+  modId="waystones_model_replacer"
+  version="${version}"
+  displayName="Waystones Model Replacer"
+  description="Visually replaces the Waystones model, textures, runes and particles with a custom model. Cosmetic-only, no gameplay changes."
+  authors="deokma"
+  credits="BlayTheNinth (Waystones)"
+  # Cosmetic, client-only addon: a client carrying this mod may join servers that do not have it.
+  displayTest="IGNORE_ALL_VERSION"
+
+# Register the Mixins (particle mixin is client-only; shape/hitbox mixin runs both sides).
+[[mixins]]
+  config="waystones_model_replacer.mixins.json"
+
+# Load AFTER Waystones so our resource overrides (models / textures / transparent rune sprite)
+# take priority over Waystones' own assets.
+[[dependencies.waystones_model_replacer]]
+  modId="waystones"
+  type="required"
+  versionRange="[21.1.0,21.2.0)"
+  ordering="AFTER"
+  side="CLIENT"
+
+[[dependencies.waystones_model_replacer]]
+  modId="neoforge"
+  type="required"
+  versionRange="[21.1,)"
+  ordering="NONE"
+  side="BOTH"
+
+[[dependencies.waystones_model_replacer]]
+  modId="minecraft"
+  type="required"
+  versionRange="[1.21.1,1.22)"
+  ordering="NONE"
+  side="BOTH"
