@@ -40,15 +40,15 @@ public class WaystoneBlockShapeMixin {
 
     @Unique
     private static final VoxelShape wmr$LOWER = Shapes.or(
-            Block.box(7.0, 0.0, 7.0, 9.0, 16.0, 9.0),   // central post
+            Block.box(6.0, 0.0, 6.0, 10.0, 16.0, 10.0),   // central post
             Block.box(1.0, 0.0, 1.0, 15.0, 1.0, 15.0)   // base plate
     ).optimize();
 
     // Authored for FACING=SOUTH (sign board toward +Z, matching the model at 0 degrees rotation).
     @Unique
     private static final VoxelShape wmr$UPPER_BASE = Shapes.or(
-            Block.box(7.0, 0.0, 7.0, 9.0, 15.0, 9.0),    // post continues
-            Block.box(2.0, 4.0, 8.0, 14.0, 16.0, 12.0)   // sign board + arms (one-sided, slim)
+            Block.box(6.0, 0.0, 6.0, 10.0, 15.0, 10.0),    // post continues
+            Block.box(3.0, 4.0, 3.0, 13.0, 16.0, 13.0)   // larger box to suit a variety of signs
     ).optimize();
 
     @Unique

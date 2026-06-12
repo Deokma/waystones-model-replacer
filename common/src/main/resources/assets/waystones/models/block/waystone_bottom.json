@@ -1,5 +1,6 @@
 {
 	"__comment": "Waystones Model Replacer - LOWER block. Blockbench model (sign_bottom).",
+	"credit": "Made by M0RAM1",
 	"texture_size": [128, 128],
 	"textures": {
 		"4": "waystones_model_replacer:block/sign_bottom",

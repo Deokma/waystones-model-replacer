@@ -1,4 +1,62 @@
 {
-  "__comment": "Waystones Model Replacer variant redirect -> shared custom geometry.",
-  "parent": "waystones:block/waystone_bottom"
+  "__comment": "Waystones Model Replacer - UPPER block. Blockbench model (skull_bottom).",
+  "credit": "Made by M0RAM1",
+  "textures": {
+    "0": "waystones_model_replacer:block/skull_bottom",
+    "particle": "waystones_model_replacer:block/skull_bottom"
+  },
+  "elements": [
+    {
+      "from": [7, 0, 7],
+      "to": [9, 16, 9],
+      "rotation": {"angle": 0, "axis": "y", "origin": [7, 0, 7]},
+      "faces": {
+        "north": {"uv": [0, 0, 2, 16], "texture": "#0"},
+        "east": {"uv": [2, 0, 4, 16], "texture": "#0"},
+        "south": {"uv": [4, 0, 6, 16], "texture": "#0"},
+        "west": {"uv": [6, 0, 8, 16], "texture": "#0"},
+        "up": {"uv": [10, 8, 8, 6], "texture": "#0"},
+        "down": {"uv": [10, 8, 8, 10], "texture": "#0"}
+      }
+    },
+    {
+      "from": [8, 0, 5],
+      "to": [11, 1, 8],
+      "rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 5]},
+      "faces": {
+        "north": {"uv": [11, 0, 14, 1], "texture": "#0"},
+        "east": {"uv": [11, 1, 14, 2], "texture": "#0"},
+        "south": {"uv": [11, 2, 14, 3], "texture": "#0"},
+        "west": {"uv": [11, 3, 14, 4], "texture": "#0"},
+        "up": {"uv": [11, 3, 8, 0], "texture": "#0"},
+        "down": {"uv": [11, 3, 8, 6], "texture": "#0"}
+      }
+    },
+    {
+      "from": [8, 0, 9],
+      "to": [10, 1, 11],
+      "rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 9]},
+      "faces": {
+        "north": {"uv": [8, 12, 10, 13], "texture": "#0"},
+        "east": {"uv": [12, 8, 14, 9], "texture": "#0"},
+        "south": {"uv": [12, 9, 14, 10], "texture": "#0"},
+        "west": {"uv": [10, 12, 12, 13], "texture": "#0"},
+        "up": {"uv": [12, 10, 10, 8], "texture": "#0"},
+        "down": {"uv": [12, 10, 10, 12], "texture": "#0"}
+      }
+    },
+    {
+      "from": [6, 0, 6],
+      "to": [8, 1, 8],
+      "rotation": {"angle": 0, "axis": "y", "origin": [6, 0, 6]},
+      "faces": {
+        "north": {"uv": [11, 4, 13, 5], "texture": "#0"},
+        "east": {"uv": [11, 5, 13, 6], "texture": "#0"},
+        "south": {"uv": [12, 6, 14, 7], "texture": "#0"},
+        "west": {"uv": [12, 7, 14, 8], "texture": "#0"},
+        "up": {"uv": [12, 8, 10, 6], "texture": "#0"},
+        "down": {"uv": [10, 10, 8, 12], "texture": "#0"}
+      }
+    }
+  ]
 }

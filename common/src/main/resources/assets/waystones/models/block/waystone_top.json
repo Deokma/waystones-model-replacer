@@ -1,5 +1,6 @@
 {
 	"__comment": "Waystones Model Replacer - UPPER block. Blockbench model (sign_top).",
+	"credit": "Made by M0RAM1",
 	"texture_size": [32, 32],
 	"textures": {
 		"0": "waystones_model_replacer:block/sign_top",
